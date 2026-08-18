@@ -1,0 +1,13 @@
+{
+  "region": "ap-southeast-1",
+  "app": {
+    "name": "expressjs",
+    "framework": "bun",
+    "entry": "sever.js",
+    "httpPort": 3000,
+    "build": {
+      "command": null,
+      "outputDirectory": "."
+    }
+  }
+}
