@@ -9,7 +9,24 @@ import { articleController } from "../controllers/article.controllers.js";
 // next để kiểm tra xong đi quia lớp khác
 articleRouter.get(
     "/",
-    
+    //middleware function
+    //next để đi tiếp
+    (req,res,next)=> {
+        console.log("middle 1" )
+        next();
+    },
+    (req,res,next)=> {
+        console.log("middle 2" )
+        next();
+    },
+    (req,res,next)=> {
+        console.log("middle 3" )
+        next();
+    },
+    (req,res,next)=> {
+        console.log("middle 4" )
+        next();
+    },
     articleController.findAll);
     
 
